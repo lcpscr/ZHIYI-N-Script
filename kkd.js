@@ -113,7 +113,7 @@ if (!kkdcookieArr[0]) {
       kkdcookie = kkdcookieArr[i];
       $.index = i + 1;
       console.log(`\n开始【快看点${$.index}】`)
-      await userinfo()
+      //await userinfo()
       await control()
       await intervalAward()
       await lotteryTable()
