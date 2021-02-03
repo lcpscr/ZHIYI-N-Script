@@ -113,7 +113,7 @@ if (!kkdcookieArr[0]) {
       kkdcookie = kkdcookieArr[i];
       $.index = i + 1;
       console.log(`\n开始【快看点${$.index}】`)
-      //await userinfo()
+      await userinfo()
       await control()
       await intervalAward()
       await lotteryTable()
@@ -175,7 +175,7 @@ return new Promise((resolve, reject) => {
 function userinfo() {
 return new Promise((resolve, reject) => {
   let userinfourl ={
-    url: `https://api.yuncheapp.cn/pearl-incentive/api/v1/user/tab?nt=LTE&isp=&lon=MTE2LjgyNzYzNA%3D%3D%0A&fr=ANDROID&egid=DFP474DC3D6DEBE3DC7B6B6779265D17E6F8079BFA06B1857E92012E3F658ED4&oc=HUAWEI&od=&md=GLK-AL00&lan=zh-cn&mi=&apiLevel=29&lat=MzQuNzU1NTE%3D%0A&sr=1080*2208&app=pearl&cc=cn&ss=PHVua25vd24gc3NpZD4%3D%0A&kpf=ANDROID&os=10&ch=MYAPP&kpn=pearl&_body=dee849a2cbcaee812208c561417599afb6eadaf19d7ab1114b0bac30179df55d&__clientSign2=APHuLQGaC30zMTg0OTY2ODQ5Yzk5NjAzZmVlODU5Nzg0MmRhMjk1MmQyN2UyYjM1YjA&ve=2.1.8.353&dpbs=3sCt3iAAMzE4NDk2Njg0AAIQAIinM9cE1xJCTRAAAADJPFIbhHLhlDzsgGI562zM%0A&did=ANDROID_37ed95b9009a0da8&adve=3.1.0`,
+    url: `https://api.yuncheapp.cn/pearl-incentive/api/v1/user/tab?${kkdheader}`,
     headers: {
               Cookie: kkdcookie,
               'Connection': 'keep-alive',
