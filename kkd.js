@@ -175,14 +175,20 @@ return new Promise((resolve, reject) => {
 function userinfo() {
 return new Promise((resolve, reject) => {
   let userinfourl ={
-    url: `https://api.yuncheapp.cn/pearl-incentive/api/v1/user/tab?${kkdheader}`,
+    url: `https://api.yuncheapp.cn/pearl-incentive/api/v1/user/tab?nt=LTE&isp=&lon=MTE2LjgyNzYzNA%3D%3D%0A&fr=ANDROID&egid=DFP474DC3D6DEBE3DC7B6B6779265D17E6F8079BFA06B1857E92012E3F658ED4&oc=HUAWEI&od=&md=GLK-AL00&lan=zh-cn&mi=&apiLevel=29&lat=MzQuNzU1NTE%3D%0A&sr=1080*2208&app=pearl&cc=cn&ss=PHVua25vd24gc3NpZD4%3D%0A&kpf=ANDROID&os=10&ch=MYAPP&kpn=pearl&_body=dee849a2cbcaee812208c561417599afb6eadaf19d7ab1114b0bac30179df55d&__clientSign2=WwRalAGaC3wzMTg0OTY2ODc5YzllZWY3MThlMGM3NzgxMTU2Y2Q5ZGM2NzEwYjIxZGY&ve=2.1.8.353&dpbs=3sCt3iAAMzE4NDk2Njg3AAIQAIinM9cEcz3aNhAAAADexV915IsHDVGjoLBkh7wa%0A&did=ANDROID_37ed95b9009a0da8&adve=3.1.0`,
     headers: {
-              Cookie: kkdcookie,
-              'Connection': 'keep-alive',
-              'Content-Type': 'application/json',
-              'Host': 'api.yuncheapp.cn',
-              'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'
-          },
+              "Cookie": "pearl.api_st=CgxwZWFybC5hcGkuc3QSgAEjwhmBKNDhbkmeza15xdbEzekD3IEsJ9gxBdWsgJxp1S7-0eo2UsaSt9mFgxNG9pH4IXE3i1MYGfNp8FHSPPq_3D9wCdxw9U3_aDI4LoQRkYAG8qD8XpMXxhUXpegKTyyUk9bhKFgcl61myZQSIz4mfUdhI1CgalPh7zttOgLllhoSCvooEvMRxgCi6aIgFCcC54vvIiApKwaPVYC5RZ1JhW3JDy5_4rJ_9Wz_d77boFTEG0dK8CgFMAE; userId=64646251; did=ANDROID_37ed95b9009a0da8",        
+"Accept-Language":"zh-cn",
+"Connection":" keep-alive",
+"rbe-ty":"k1",
+"User-Agent":"pearl-android",
+"X-REQUESTID":"262564979",
+"Content-Type":"application/json;charset=UTF-8",
+"Content-Length":"2",
+"Host":"api.yuncheapp.cn",
+"Accept-Encoding":" gzip"
+},
+
      body:'{}'
 }
    $.post(userinfourl,(error, response, data) =>{
