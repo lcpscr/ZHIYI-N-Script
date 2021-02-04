@@ -176,7 +176,7 @@ return new Promise((resolve, reject) => {
 function userinfo() {
 return new Promise((resolve, reject) => {
   let userinfourl ={
-    url: `https://api.yuncheapp.cn/pearl-incentive/api/v1/user/tabV2?${kkdheader}`,
+    url: `https://api.yuncheapp.cn/pearl-incentive/api/v1/user/tab?${kkdheader}`,
     headers: {
               Cookie: kkdcookie,
               'Connection': 'keep-alive',
@@ -186,11 +186,11 @@ return new Promise((resolve, reject) => {
           },
      body:'{}'
 }
-   //$.post(userinfourl,(error, response, data) =>{
-    // const result = JSON.parse(data)
-     // if(logs) $.log(data)
-     // if(result.message == 'success') {
-       //   message +='🎉'+result.data.userInfo.nickname+'-今日已得:'+result.data.userInfo.todayCoins+'-现有余额:'+result.data.userInfo.coins+'\n'
+   $.post(userinfourl,(error, response, data) =>{
+     const result = JSON.parse(data)
+     if(logs) $.log(data)
+     if(result.message == 'success') {
+     message +='🎉'+result.data.userInfo.nickname+'-今日已得:'+result.data.userInfo.todayCoins+'-现有余额:'+result.data.userInfo.coins+'\n'
   
 }     else{
           other += '⚠️异常'
