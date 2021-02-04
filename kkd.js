@@ -186,11 +186,11 @@ return new Promise((resolve, reject) => {
           },
      body:'{}'
 }
-   $.post(userinfourl,(error, response, data) =>{
-     const result = JSON.parse(data)
-      if(logs) $.log(data)
-      if(result.message == 'success') {
-          message +='🎉'+result.data.userInfo.nickname+'-今日已得:'+result.data.userInfo.todayCoins+'-现有余额:'+result.data.userInfo.coins+'\n'
+   //$.post(userinfourl,(error, response, data) =>{
+    // const result = JSON.parse(data)
+     // if(logs) $.log(data)
+     // if(result.message == 'success') {
+       //   message +='🎉'+result.data.userInfo.nickname+'-今日已得:'+result.data.userInfo.todayCoins+'-现有余额:'+result.data.userInfo.coins+'\n'
   
 }     else{
           other += '⚠️异常'
